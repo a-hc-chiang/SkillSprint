@@ -15,6 +15,8 @@ import App from './App';
 import HomePage from './pages/HomePage';
 import BlankPage from './pages/BlankPage';
 import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Login from './pages/Login';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +28,14 @@ const router = createBrowserRouter([
     path: "about-us",
     element: <Home /> // change later
   },
-
+  {
+    path: "create-profile",
+    element: <Profile />
+  },
+  {
+    path: "login", 
+    element: <Login />
+  },
 ]);
 
 
