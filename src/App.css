@@ -36,3 +36,63 @@
     transform: rotate(360deg);
   }
 }
+
+.Login-form {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+
+  gap: 30px;
+}
+
+.Sign-In-Text {
+  text-align: left;
+  width: 55%;
+  margin-top: 0;
+  
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+.LoginContainer2 {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.Email-Text {
+  text-align: left;
+  width: 320px;
+  font-size: small;
+  padding: 8px;
+  
+}
+
+.Log-In {
+  text-align: left;
+  width: 320px;
+  margin-bottom: 5px; 
+  font-size: xx-large;
+}
+
+.input, .pass {
+  order: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #ffffff; 
+  padding: 8px;
+  border-radius: 8px;
+  width: 300px;
+  font-size: 14px;
+}
+
+.EmailButton, .GoogleButton {
+  padding: 7px;
+  width: 320px;
+  border-radius: 8px;
+  background: #ffffff; 
+}
