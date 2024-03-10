@@ -1,4 +1,4 @@
-
+/* 
 .HeroSection {
     min-width: 100%;
     min-height: 100vh;
@@ -9,7 +9,13 @@
 
 
 
-}
+} */
+.flex-container {
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Add space between the content and mascot */
+    padding: 0 50px; /* Adjust padding as needed for spacing */
+  }
+  
 
 
 .hero-container {
@@ -22,6 +28,7 @@
     padding-left: 150px;
     object-fit: contain;
     background-image: url("./../images/landingpage.png")
+    
 
 }
 

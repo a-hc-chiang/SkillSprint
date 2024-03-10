@@ -6,11 +6,11 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 export default function MultiActionAreaCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 553 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="457"
           image="http://www.google.com/intl/en_com/images/logo_plain.png"
           alt="green iguana"
         />
@@ -26,7 +26,7 @@ export default function MultiActionAreaCard() {
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          Submit
         </Button>
       </CardActions>
     </Card>
