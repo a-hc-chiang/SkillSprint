@@ -5,11 +5,18 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import logo from './logo.png'; // Tell webpack this JS file uses this image
+import logo from './logo.png'; // Tell webpack this JS file uses this image;
+import { useNavigate } from "react-router-dom";
 
 
 
 export default function ButtonAppBar() {
+  const navigate = useNavigate();
+
+  const handleSubmit = () => {
+    navigate("/login"); 
+  }
+
   return (
     <div className ='navbar-container'>
  <Box sx={{ flexGrow: 1 }}>
@@ -28,7 +35,7 @@ export default function ButtonAppBar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             skillsumo
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" onClick={handleSubmit}>Login</Button>
         </Toolbar>
       </AppBar>
     </Box>
