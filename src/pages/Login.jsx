@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from 'src/Components/logo.png';
+import logo from '../Components/logo.png';
+import Navbar from "../Components/Navbar";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -27,10 +28,11 @@ export default function Login() {
 
   return (
     <div className="LoginContainer">
-      <div className="LoginHeader">
+      {/* <div className="LoginHeader">
         <div id="LoginLogo"></div>
         <div id="LoginSigninButton"></div>
-      </div>
+      </div> */}
+      <Navbar buttonText="sign in"></Navbar>
       <div className="LoginBody">
         <div id="LoginFormDiv">
           <div id="formLogo">

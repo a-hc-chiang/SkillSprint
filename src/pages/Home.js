@@ -9,7 +9,7 @@ import CardItem from './../Components/CardItem';
 function Home () {
     return (
         <section className="hero">
-            <Navbar />
+            <Navbar buttonText="log in" backgroundColor = "#333bd4"/>
             <HeroSection />
 
             
