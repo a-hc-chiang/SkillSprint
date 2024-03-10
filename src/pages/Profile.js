@@ -3,7 +3,7 @@ import Select from 'react-select';
 import './Profile.css';
 import {Button} from '../Components/Button';
 import Navbar from "../Components/Navbar";
-
+import Input from '../Components/input';
 const options = [
     {value: "travel", label: "Travel"},
     {value: "gaming", label: "Gaming"},
@@ -15,6 +15,22 @@ const options = [
 ]
 
 function MultiSelectMenu() {
+
+    // const { label, type, value } = objValue;
+    const [formValues, setFormValues] = useState({});
+    const handleChangeForm = (e) => {
+        setFormValues({ ...formValues, [e.target.id]: e.target.value });
+      };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(formValues);
+    };
+
+
+
+
+
     const [selectedOptions, setSelectedOptions] = useState([]);
 
     const handleChange = (selectedOption) => {
@@ -27,6 +43,13 @@ function MultiSelectMenu() {
 
     return (
         <div>
+            <h5>First and Last name</h5>
+            <input type="text" id="txtbox"></input>
+            <input type="button" id="btn1" value="enter"></input>
+
+            <p class="output" id="output1"></p>
+            
+        
             <h5>Interests and Hobbies</h5>
 
             {/* Dropdown */}
@@ -36,13 +59,38 @@ function MultiSelectMenu() {
             onChange={handleChange}
             isMulti={true} 
             />
-            <button onClick={submit}>Confirm</button>
+  <div className="App">
+      <form onSubmit={handleSubmit}>
+        <div className="input-group">
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            value={formValues.name || ""}
+            onChange={handleChangeForm}
+          />
         </div>
+        <div className="input-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            value={formValues.email || ""}
+            onChange={handleChangeForm}
+          />
+        </div>
+        <button type="submit" className="submit-btn">
+          Submit
+        </button>
+      </form>
+    </div>
+    </div>
+
     );
 }
 
-function Emojis() {
-    return (
+function Emojis() { 
+return (
         <>
             <button onClick>🤪</button>
         </>
