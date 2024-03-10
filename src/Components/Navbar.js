@@ -47,7 +47,7 @@ export default function ButtonAppBar(props) {
 
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            skillsumo
+            rizzsumo
           </Typography>
 
           <Button color="inherit" onClick={handleSubmit}>{props.buttonText}</Button>

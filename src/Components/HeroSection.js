@@ -20,7 +20,7 @@ export default function HeroSection() {
 
 <div className ='hero-container'>
 <img src={logo} alt="Logo" style={{ width: '135px', height: '130px' }} />
-<h1>skillsumo</h1>
+<h1>rizzsumo</h1>
 <p>Bringing a world of interests and friendships in front of you.</p>
 <div className="hero-btns">
     <Button
