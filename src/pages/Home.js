@@ -9,7 +9,6 @@ function Home () {
         <>
             <Navbar />
             <HeroSection />
-            <div style={{ backgroundImage: `url(${landingpage})`, height: '100vh', backgroundSize: 'cover' }}></div>
 
             
         </>
