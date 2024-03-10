@@ -12,6 +12,8 @@ import App from './App';
 
 import HomePage from './pages/HomePage';
 import BlankPage from './pages/BlankPage';
+import Login from './pages/Login';
+
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "home-page", 
     element: <HomePage />
+  },
+  {
+    path: "login", 
+    element: <Login />
   },
 ]);
 
