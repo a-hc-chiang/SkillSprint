@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+//import logo from 'src/Components/logo.png';
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -32,7 +33,9 @@ export default function Login() {
       </div>
       <div className="LoginBody">
         <div id="LoginFormDiv">
-          <div id="formLogo"></div>
+          <div id="formLogo">
+          {/* <img src={logo} alt="Logo" style={{ width: '50%', height: '50%' }} /> */}
+          </div>
           <div id="loginTextDiv">
             
           <h1 className="Log-In">Log in</h1>
