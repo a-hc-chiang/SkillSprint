@@ -6,21 +6,26 @@ import {
   RouterProvider
 } from "react-router-dom";
 
+import Navbar from "./Components/Navbar";
+
 import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
 import BlankPage from './pages/BlankPage';
+import Home from './pages/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <App />
+
   },
   {
     path: "about-us",
-    element: <BlankPage />
+    element: <Home />
   },
+
 ]);
 
 
