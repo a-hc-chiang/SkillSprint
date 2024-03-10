@@ -13,7 +13,9 @@ export default function HeroSection() {
     
   return (
     <div className ='hero-container'>
-        <img src={logo} alt="Logo" style={{ width: '75px', height: '75px' }} />
+
+
+        <img src={logo} alt="Logo" style={{ width: '135px', height: '130px' }} />
         <h1>skillsumo</h1>
 
         <p>Bringing a world of interests and friendships in front of you.</p>
