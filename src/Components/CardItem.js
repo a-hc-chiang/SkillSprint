@@ -11,16 +11,15 @@ export default function MultiActionAreaCard() {
         <CardMedia
           component="img"
           height="457"
-          image="http://www.google.com/intl/en_com/images/logo_plain.png"
+          image="https://i.pinimg.com/736x/f0/11/89/f01189064f0734596c1dc6e2d21af01c.jpg"
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            Knots & Needles Night
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          Saturday, Mar 9 2024
           </Typography>
         </CardContent>
       </CardActionArea>
