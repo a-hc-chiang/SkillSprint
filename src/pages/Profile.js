@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Select from 'react-select';
 import './Profile.css';
 import {Button} from '../Components/Button';
+import Navbar from "../Components/Navbar";
 
 const options = [
     {value: "travel", label: "Travel"},
@@ -50,24 +51,33 @@ function Emojis() {
 }
 export default function Profile() {
     return (
-        <>
-            <h1>Create Profile</h1>
-            <img src="./rizzsumo.png"></img>
-            <div class="flexbox-section">
-                <h2>Angela Li</h2>
-                <h3>Age</h3>
-                <h3>Located</h3>
-            </div>
+        <div>
+            <Navbar buttonText="sign in"></Navbar>
 
-            <div class="flexbox-answer">
-                <h3>she/her/hers</h3>
-                <h3>19</h3>
-                <h3>Vancouver BC</h3>
+            <div>
+                <div>
+                    <h1>Create Profile</h1>
+                    <img src="./rizzsumo.png"></img>
+                    <div class="flexbox-section">
+                        <h2>Angela Li</h2>
+                        <h3>Age</h3>
+                        <h3>Located</h3>
+                    </div>
+
+                    <div class="flexbox-answer">
+                        <h3>she/her/hers</h3>
+                        <h3>19</h3>
+                        <h3>Vancouver BC</h3>
+                    </div>
+                    
+                    <div id="selectmenu"><MultiSelectMenu/></div>
+                    <div id="selectmenu"><Emojis/></div>
+                    <Button link='/matching'>Start your rizzsumo journey</Button>
+                </div>
             </div>
             
-            <div id="selectmenu"><MultiSelectMenu/></div>
-            <div id="selectmenu"><Emojis/></div>
-            <Button link='/matching'>Start your rizzsumo journey</Button>
-        </>
+        
+        </div>
+        
     );
 }
