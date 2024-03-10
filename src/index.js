@@ -19,12 +19,12 @@ import Home from './pages/Home';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <Home />
 
   },
   {
     path: "about-us",
-    element: <Home />
+    element: <Home /> // change later
   },
 
 ]);

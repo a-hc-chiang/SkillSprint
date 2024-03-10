@@ -1,0 +1,30 @@
+
+.HeroSection {
+    background-image: url('./../images/landingpage.png');
+    min-width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    list-style: none;
+}
+.hero-container {
+    /* background: url('images/img-home.jpg') center center/cover
+    no-repeat; */ 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
+    object-fit: contain;
+    /* background-image: url("landingpage"); */
+
+}
+
+.hero-container > h1 {
+    color: rgb(208, 71, 103);
+    font-size: 40px;
+
+
+}
