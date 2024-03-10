@@ -19,7 +19,7 @@ export default function Login() {
   };
 
   const handleLogin = () => {
-    navigate("/about-us");
+    navigate("/create-profile");
   };
 
   const handleGmail = () => {
@@ -36,7 +36,7 @@ export default function Login() {
       <div className="LoginBody">
         <div id="LoginFormDiv">
           <div id="formLogo">
-          <img src={logo} alt="Logo" style={{ width: '50%', height: '50%' }} />
+          <img src={logo} alt="Logo" style={{ width: '100%', height: '100%' }} />
           </div>
           <div id="loginTextDiv">
             

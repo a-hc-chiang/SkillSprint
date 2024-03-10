@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: white;
+  background-color: #E0F7FE;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
 }
 
 .App-link {
-  color: #6163fb;
+  color: #E0F7FE;
 }
 
 @keyframes App-logo-spin {
@@ -47,7 +47,7 @@ h1{
 #formLogo{
   height: 8vh;
   width: 8vh;
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
 }
 
 #loginTextDiv{
@@ -64,6 +64,12 @@ h1{
   text-align: left;
 
   gap: 30px;
+}
+
+#ProfileRectangle {
+  display: flex;
+  flex-direction: row;
+  padding: 15%;
 }
 
 .LoginHeader{
