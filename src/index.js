@@ -12,6 +12,7 @@ import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
+import HomePage from './pages/HomePage';
 import BlankPage from './pages/BlankPage';
 import Home from './pages/Home';
 
