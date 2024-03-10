@@ -10,6 +10,7 @@ import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
+import HomePage from './pages/HomePage';
 import BlankPage from './pages/BlankPage';
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "about-us",
     element: <BlankPage />
+  },
+  {
+    path: "home-page", 
+    element: <HomePage />
   },
 ]);
 
