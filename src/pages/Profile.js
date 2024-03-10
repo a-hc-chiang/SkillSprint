@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 import './Profile.css';
+import {Button} from '../Components/Button';
 
 const options = [
     {value: "travel", label: "Travel"},
@@ -66,7 +67,7 @@ export default function Profile() {
             
             <div id="selectmenu"><MultiSelectMenu/></div>
             <div id="selectmenu"><Emojis/></div>
-            <button onClick>Start your rizzsumo journey</button>
+            <Button link='/matching'>Start your rizzsumo journey</Button>
         </>
     );
 }
