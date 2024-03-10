@@ -16,6 +16,7 @@ import HomePage from './pages/HomePage';
 import BlankPage from './pages/BlankPage';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
+import Login from './pages/Login';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,10 @@ const router = createBrowserRouter([
     path: "create-profile",
     element: <Profile />
   },
-
+  {
+    path: "login", 
+    element: <Login />
+  },
 ]);
 
 
