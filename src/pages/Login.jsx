@@ -22,9 +22,7 @@ export default function Login() {
     return (
         <form>
             <label for = "email">email</label>
-
             <input value = {email} onChange={handleEmail} type = "email" placeholder="youremail@gmail.com" id = "email" name = "email" />
-
             <label for="password">password</label>
             <input value = {pass} onChange={handlePass} type = "password" placeholder="password" id = "password" name = "password" />
             <button onClick={handleSubmit} >Log In</button>
