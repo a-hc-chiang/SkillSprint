@@ -1,5 +1,5 @@
 .hero {
     display: flex;
     height: 100vh;
-    background-color: beige;
+    background-image: url("./../images/landingpage.png")
 }
