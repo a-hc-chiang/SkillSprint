@@ -10,10 +10,17 @@
 
 
 } */
+
+
+.background {
+    background-image: url("./../images/landingpage.png")
+
+
+  }
 .flex-container {
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Add space between the content and mascot */
-    padding: 0 50px; /* Adjust padding as needed for spacing */
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 20%; 
   }
   
 
@@ -27,8 +34,7 @@
     padding-top: 300px;
     padding-left: 150px;
     object-fit: contain;
-    background-image: url("./../images/landingpage.png")
-    
+
 
 }
 

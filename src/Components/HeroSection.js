@@ -13,31 +13,38 @@ import mascot from './mascot.png';
 export default function HeroSection() {
     
   return (
+    <div className = 'background'>
 
-      
-    <div className ='hero-container'>
-        <img src={logo} alt="Logo" style={{ width: '135px', height: '130px' }} />
-        <h1>skillsumo</h1>
-        <p>Bringing a world of interests and friendships in front of you.</p>
-        <div className="hero-btns">
-            <Button
-            link='/create-profile'
-            className='btns' 
-            buttonStyle='btn--outline'
-            buttonSize='btn--large'
-            // onClick={{handleClick}}
-            >
-                Get Started
-            </Button>
+<div className = 'flex-container'>
 
-        </div>
 
-        <div className='mascot-container'>
-          <img src={mascot} alt="mascot" style={{ width: '893px', height: '845px' }} />
-          </div>
+<div className ='hero-container'>
+<img src={logo} alt="Logo" style={{ width: '135px', height: '130px' }} />
+<h1>skillsumo</h1>
+<p>Bringing a world of interests and friendships in front of you.</p>
+<div className="hero-btns">
+    <Button
+    link='/create-profile'
+    className='btns' 
+    buttonStyle='btn--outline'
+    buttonSize='btn--large'
+    >
+        Get Started
+    </Button>
+</div>
+</div>
 
+
+<div className='mascot-container'>
+  <img src={mascot} alt="mascot" style={{ width: '893px', height: '845px' }} />
+  </div>
+
+
+</div>
 
     </div>
+
+     
 
  
 
