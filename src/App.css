@@ -66,6 +66,12 @@ h1{
   gap: 30px;
 }
 
+#ProfileRectangle {
+  display: flex;
+  flex-direction: row;
+  padding: 15%;
+}
+
 .LoginHeader{
   width:100%;
   height: 10vh;
