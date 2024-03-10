@@ -72,6 +72,12 @@ h1{
   padding: 15%;
 }
 
+#ProfileOuterRectangle {
+  display: flex;
+  flex-direction: column;
+  padding: 15%;
+}
+
 .LoginHeader{
   width:100%;
   height: 10vh;
@@ -181,4 +187,15 @@ h1{
   width: 100%;
   border-radius: 8px;
   background: #ffffff; 
+}
+
+.CreateProfileTitle {
+  color: black;
+}
+
+#StrawberryIconAndContents{
+    display: flex; 
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
 }

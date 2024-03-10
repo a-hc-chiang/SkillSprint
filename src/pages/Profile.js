@@ -37,50 +37,73 @@ function MultiSelectMenu() {
   const submit = () => console.log(selectedOptions);
 
   return (
-    <div id="ProfileRectangle">
-      <div>
-        <img src={StrawberryIcon} style={{ width: "50%", height: "auto" }} />
-      </div>
-      <div>
-        <h5>First and Last name</h5>
-        <input type="text" id="txtbox"></input>
-        <input type="button" id="btn1" value="enter"></input>
+    <div>
+      <div id="ProfileRectangle">
+        <div id="StrawberryIconAndContents">
+          <div>
+            <img
+              src={StrawberryIcon}
+              style={{ width: "50%", height: "auto" }}
+            />
+          </div>
 
-        <p class="output" id="output1"></p>
+          <div id="ProfileOuterRectangle">
+            <h1 className="CreateProfileTitle">Create Profile</h1>
+          </div>
+          <img src="./rizzsumo.png"></img>
+          <div class="flexbox-section">
+            <h2>Name</h2>
+            <h3>Age</h3>
+            <h3>Located</h3>
+          </div>
 
-        <h5>Interests and Hobbies</h5>
+          <div class="flexbox-answer">
+            <h3>she/her/hers</h3>
+            <h3>19</h3>
+            <h3>Vancouver BC</h3>
+          </div>
+        </div>
+        <div>
+          <h5>First and Last name</h5>
+          <input type="text" id="txtbox"></input>
+          <input type="button" id="btn1" value="enter"></input>
 
-        {/* Dropdown */}
-        <Select
-          options={options}
-          value={selectedOptions}
-          onChange={handleChange}
-          isMulti={true}
-        />
-        <div className="App">
-          <form onSubmit={handleSubmit}>
-            <div className="input-group">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                value={formValues.name || ""}
-                onChange={handleChangeForm}
-              />
-            </div>
-            <div className="input-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                value={formValues.email || ""}
-                onChange={handleChangeForm}
-              />
-            </div>
-            <button type="submit" className="submit-btn">
-              Submit
-            </button>
-          </form>
+          <p class="output" id="output1"></p>
+
+          <h5>Interests and Hobbies</h5>
+
+          {/* Dropdown */}
+          <Select
+            options={options}
+            value={selectedOptions}
+            onChange={handleChange}
+            isMulti={true}
+          />
+          {/* <div className="App">
+            <form onSubmit={handleSubmit}>
+              <div className="input-group">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  value={formValues.name || ""}
+                  onChange={handleChangeForm}
+                />
+              </div>
+              <div className="input-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  value={formValues.email || ""}
+                  onChange={handleChangeForm}
+                />
+              </div>
+              <button type="submit" className="submit-btn">
+                Submit
+              </button>
+            </form>
+          </div> */}
         </div>
       </div>
     </div>
@@ -101,20 +124,6 @@ export default function Profile() {
 
       <div>
         <div>
-          <h1>Create Profile</h1>
-          <img src="./rizzsumo.png"></img>
-          <div class="flexbox-section">
-            <h2>Angela Li</h2>
-            <h3>Age</h3>
-            <h3>Located</h3>
-          </div>
-
-          <div class="flexbox-answer">
-            <h3>she/her/hers</h3>
-            <h3>19</h3>
-            <h3>Vancouver BC</h3>
-          </div>
-
           <div id="selectmenu">
             <MultiSelectMenu />
           </div>
