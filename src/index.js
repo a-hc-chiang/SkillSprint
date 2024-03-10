@@ -17,6 +17,7 @@ import BlankPage from './pages/BlankPage';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Login from './pages/Login';
+import Matching from './pages/Matching';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "login", 
     element: <Login />
+  },
+  {
+    path: "matching", 
+    element: <Matching />
   },
 ]);
 
