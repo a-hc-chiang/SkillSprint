@@ -11,7 +11,8 @@ import logo from './logo.png'; // Tell webpack this JS file uses this image
 
 export default function ButtonAppBar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <div className ='navbar-container'>
+ <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
           <IconButton 
@@ -31,5 +32,9 @@ export default function ButtonAppBar() {
         </Toolbar>
       </AppBar>
     </Box>
+
+
+    </div>
+   
   );
 }

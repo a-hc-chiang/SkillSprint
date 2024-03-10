@@ -13,8 +13,6 @@ export default function HeroSection() {
     
   return (
     <div className ='hero-container'>
-
-
         <img src={logo} alt="Logo" style={{ width: '75px', height: '75px' }} />
         <h1>skillsumo</h1>
 

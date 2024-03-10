@@ -6,12 +6,13 @@ import landingpage from "./../images/landingpage.png";
 
 function Home () {
     return (
-        <>
+        <section className="hero">
+
             <Navbar />
             <HeroSection />
 
             
-        </>
+        </section>
     )
 }
 export default Home;
