@@ -21,12 +21,12 @@ import Login from './pages/Login';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <Home />
 
   },
   {
     path: "about-us",
-    element: <Home />
+    element: <Home /> // change later
   },
   {
     path: "create-profile",
